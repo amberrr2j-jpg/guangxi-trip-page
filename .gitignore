@@ -1,0 +1,32 @@
+.DS_Store
+._*
+__MACOSX/
+.env
+.env.*
+.dev.vars
+node_modules/
+.wrangler/
+.local-preview-data.json
+source-files/
+private/
+source-facts.json
+reports/private/
+
+# 本地自定义工具与私人文件（不公开部署）
+/assets/uploads/
+/guangxi-data.json
+/guangxi.html
+/trip-editor.html
+/plan-editor.html
+/editor-server.mjs
+
+# 其余地图底图模板仅本地保留（部署只需用到的一张）
+/assets/maps/templates/*.webp
+!/assets/maps/templates/template-10-broad-riverland.webp
+# 自定义页面依赖的本地库
+/assets/vendor/
+
+# 高级功能资产（国界数据/手绘底图），本次部署不需要
+/assets/boundaries/
+/assets/maps/*.png
+/assets/maps/*.svg

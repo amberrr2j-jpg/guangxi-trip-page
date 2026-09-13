@@ -1,0 +1,786 @@
+{
+  "$schema": "./schemas/trip-data.schema.json",
+  "schemaVersion": "2.0-lite",
+  "config": {
+    "schemaVersion": "1.0.0",
+    "modules": {
+      "flights": false,
+      "overview": true,
+      "itinerary": true,
+      "todo": false,
+      "driving": false,
+      "ledger": true
+    },
+    "language": "zh-CN",
+    "persistence": {
+      "mode": "local"
+    }
+  },
+  "metadata": {
+    "tripId": "guangxi-trip",
+    "title": "广西 1+1+2",
+    "language": "zh-CN",
+    "assets": {
+      "routeMaps": [
+        "assets/maps/templates/template-10-broad-riverland.webp"
+      ]
+    }
+  },
+  "trip": {
+    "status": "draft",
+    "startDate": "2026-09-18",
+    "endDate": "2026-09-22",
+    "dayCount": 4,
+    "nightCountAway": 4,
+    "countries": [
+      "CN"
+    ],
+    "primaryDestinationCountries": [],
+    "citiesAndAreas": [
+      "南宁",
+      "崇左",
+      "百色"
+    ],
+    "routeSummary": "南宁 → 崇左 → 百色",
+    "groupSize": 4,
+    "primaryDestinationName": "广西"
+  },
+  "flightJourneys": [],
+  "flights": [],
+  "accommodations": [],
+  "groundTransport": {
+    "rentalCar": null,
+    "rentalChecklist": [],
+    "drivingNotes": [],
+    "drivingReferenceLinks": [],
+    "plannedRoadLegs": [],
+    "publicTransitAndRail": []
+  },
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-09-18",
+      "title": "抵达南宁 · first night",
+      "locations": [
+        "南宁东",
+        "邕城晚舍民宿"
+      ],
+      "notes": [],
+      "schedule": [
+        {
+          "id": "d1-1",
+          "time": "15:57",
+          "type": "flight",
+          "text": "高铁 G928 深圳北出发 · 14车 07D（王婧）/ 07F（耀杰）"
+        },
+        {
+          "id": "d1-2",
+          "time": "19:40",
+          "type": "drive",
+          "text": "南宁东取租车，前往民宿"
+        },
+        {
+          "id": "d1-3",
+          "time": "20:00",
+          "type": "check-in",
+          "text": "入住邕城晚舍民宿（新竹街道科协宿舍-1号楼）"
+        },
+        {
+          "id": "d1-4",
+          "time": "20:30",
+          "type": "restaurant",
+          "text": "吃住家饭（晚餐）"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "date": "2026-09-19",
+      "title": "青秀山半日 → 出发崇左",
+      "locations": [
+        "青秀山",
+        "崇左"
+      ],
+      "notes": [],
+      "schedule": [
+        {
+          "id": "d2-1",
+          "time": "09:30",
+          "type": "drive",
+          "text": "出发前往青秀山"
+        },
+        {
+          "id": "d2-2",
+          "time": "10:30",
+          "type": "attraction",
+          "text": "青秀山（北门入园，荫生植物园→兰园→小火车到东门，叶子花园→莫奈花园，预计3.5小时）"
+        },
+        {
+          "id": "d2-3",
+          "time": "15:00",
+          "type": "restaurant",
+          "text": "午饭（待定）"
+        },
+        {
+          "id": "d2-4",
+          "time": "15:30",
+          "type": "drive",
+          "text": "出发前往崇左（约2小时车程）"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "date": "2026-09-20",
+      "title": "选择附加景点——德天大瀑布",
+      "locations": [
+        "峒那屿湾",
+        "伏那秘境",
+        "德天跨国瀑布"
+      ],
+      "notes": [],
+      "schedule": [
+        {
+          "id": "d3-1",
+          "time": "09:30",
+          "type": "attraction",
+          "text": "峒那屿湾（选择一：电动画舫游船，60-135元/人）"
+        },
+        {
+          "id": "d3-2",
+          "time": "09:30",
+          "type": "attraction",
+          "text": "伏那秘境（选择二：皮划艇，88-188元/人）"
+        },
+        {
+          "id": "d3-3",
+          "time": "15:00",
+          "type": "attraction",
+          "text": "德天跨国瀑布（必去：门票115 + 竹筏48）"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "date": "2026-09-21",
+      "title": "通灵大峡谷",
+      "locations": [
+        "通灵大峡谷"
+      ],
+      "notes": [],
+      "schedule": [
+        {
+          "id": "d4-1",
+          "time": "10:30",
+          "type": "attraction",
+          "text": "通灵大峡谷"
+        }
+      ]
+    }
+  ],
+  "places": [],
+  "restaurants": [],
+  "bookingsAndTickets": [],
+  "ticketPlanning": {
+    "statusStorage": "local",
+    "statusStorageNote": "门票状态默认只保存在当前浏览器。",
+    "items": []
+  },
+  "preTrip": {
+    "packingItems": [],
+    "preparationsExplicitlyMentioned": [],
+    "missingNote": ""
+  },
+  "mapLinks": {
+    "providedGoogleMapsLinks": [],
+    "note": "",
+    "cityLevelNavigationDisabled": false,
+    "navigationPolicy": {
+      "noNavigationTypes": [
+        "flight",
+        "note",
+        "rest"
+      ],
+      "selfNavigationTypes": [
+        "drive",
+        "return",
+        "transfer",
+        "check-in",
+        "check-out",
+        "restaurant",
+        "attraction",
+        "walk",
+        "hike"
+      ]
+    },
+    "navigationPlaces": []
+  },
+  "issuesAndUncertainties": [],
+  "map": {
+    "schemaVersion": "1.0-lite",
+    "mapMode": "template-auto",
+    "templateId": "auto",
+    "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+    "region": {
+      "id": "guangxi-region",
+      "label": "广西",
+      "countryCode": "CN"
+    },
+    "places": [
+      {
+        "id": "p3",
+        "name": "南宁东",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 22.8404,
+          "lng": 108.4097
+        }
+      },
+      {
+        "id": "p4",
+        "name": "邕城晚舍民宿",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 22.8129,
+          "lng": 108.3512
+        }
+      },
+      {
+        "id": "p5",
+        "name": "青秀山",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 22.7862,
+          "lng": 108.3839
+        }
+      },
+      {
+        "id": "p6",
+        "name": "崇左",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 22.415,
+          "lng": 107.359
+        }
+      },
+      {
+        "id": "p7",
+        "name": "百色",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 23.9025,
+          "lng": 106.6183
+        }
+      },
+      {
+        "id": "p8",
+        "name": "峒那屿湾",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 22.7199,
+          "lng": 107.0462
+        }
+      },
+      {
+        "id": "p9",
+        "name": "伏那秘境",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 22.7406,
+          "lng": 107.091
+        }
+      },
+      {
+        "id": "p10",
+        "name": "德天跨国瀑布",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 22.8507,
+          "lng": 106.7303
+        }
+      },
+      {
+        "id": "p11",
+        "name": "通灵大峡谷",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 23.021,
+          "lng": 106.653
+        }
+      }
+    ],
+    "routes": [
+      {
+        "day": 1,
+        "placeIds": [
+          "p3",
+          "p4"
+        ]
+      },
+      {
+        "day": 2,
+        "placeIds": [
+          "p4",
+          "p5"
+        ]
+      },
+      {
+        "day": 3,
+        "placeIds": [
+          "p6",
+          "p10"
+        ]
+      },
+      {
+        "day": 4,
+        "placeIds": [
+          "p10",
+          "p11"
+        ]
+      }
+    ],
+    "dailyRoutes": [
+      {
+        "day": 1,
+        "placeIds": [
+          "p3",
+          "p4"
+        ]
+      },
+      {
+        "day": 2,
+        "placeIds": [
+          "p4",
+          "p5"
+        ]
+      },
+      {
+        "day": 3,
+        "placeIds": [
+          "p6",
+          "p10"
+        ]
+      },
+      {
+        "day": 4,
+        "placeIds": [
+          "p10",
+          "p11"
+        ]
+      }
+    ]
+  },
+  "routeMap": {
+    "defaultRegionId": "guangxi-region",
+    "regions": [
+      {
+        "id": "guangxi-region",
+        "label": "广西",
+        "countryCode": "CN",
+        "scope": "template-schematic",
+        "mapMode": "frozen-template",
+        "templateId": "broad-riverland",
+        "mapModeReason": "separated-clusters-or-long-jump",
+        "mapModeMetrics": {
+          "placeCount": 9,
+          "geoPlaceCount": 9,
+          "widthKm": 183.18,
+          "heightKm": 165.11,
+          "spanKm": 218.85,
+          "averageNearestKm": 23.38,
+          "components": 2,
+          "largestLegKm": 80.69,
+          "jumpRatio": 3.93
+        },
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "canvas": {
+          "width": 1448,
+          "height": 1086
+        },
+        "projection": {
+          "type": "relative-schematic",
+          "bounds": null
+        },
+        "baseImage": "assets/maps/templates/template-10-broad-riverland.webp",
+        "title": "广西 · 旅行路线",
+        "ariaLabel": "广西模板化旅行路线示意图，共4天",
+        "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+        "heading": {
+          "text": "广西",
+          "x": 33,
+          "y": 105,
+          "size": 40
+        },
+        "legend": {
+          "x": 35,
+          "y": 168,
+          "gap": 43
+        },
+        "annotations": [],
+        "routes": [
+          {
+            "day": 1,
+            "color": "#397dc1",
+            "placeIds": [
+              "p3",
+              "p4"
+            ],
+            "paths": [
+              "M1058.99 616.66 C1030.9 637.9 999.4 649.8 966.14 651.78"
+            ],
+            "overviewPaths": [
+              "M1058.99 616.66 C1030.9 637.9 999.4 649.8 966.14 651.78"
+            ]
+          },
+          {
+            "day": 2,
+            "color": "#e77e22",
+            "placeIds": [
+              "p4",
+              "p5"
+            ],
+            "paths": [
+              "M966.14 651.78 C985.6 680.3 1011.1 701.3 1041.4 713.54"
+            ],
+            "overviewPaths": [
+              "M966.14 651.78 C985.6 680.3 1011.1 701.3 1041.4 713.54"
+            ]
+          },
+          {
+            "day": 3,
+            "color": "#618344",
+            "placeIds": [
+              "p6",
+              "p10"
+            ],
+            "paths": [
+              "M666.02 811.2 C576.9 781.3 502.9 729.7 448.48 659.41"
+            ],
+            "overviewPaths": [
+              "M666.02 811.2 C576.9 781.3 502.9 729.7 448.48 659.41"
+            ]
+          },
+          {
+            "day": 4,
+            "color": "#209aaa",
+            "placeIds": [
+              "p10",
+              "p11"
+            ],
+            "paths": [
+              "M448.48 659.41 C446.2 623.9 434.4 591.9 413.98 565.23"
+            ],
+            "overviewPaths": [
+              "M448.48 659.41 C446.2 623.9 434.4 591.9 413.98 565.23"
+            ]
+          }
+        ],
+        "places": [
+          {
+            "id": "p3",
+            "x": 1058.99,
+            "y": 616.66,
+            "color": "#397dc1",
+            "tx": 1090.99,
+            "ty": 584.66,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "南宁东"
+            ],
+            "query": "南宁东 广西",
+            "geo": {
+              "lat": 22.8404,
+              "lng": 108.4097
+            },
+            "days": [
+              1
+            ]
+          },
+          {
+            "id": "p4",
+            "x": 966.14,
+            "y": 651.78,
+            "color": "#397dc1",
+            "tx": 934.14,
+            "ty": 619.78,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "邕城晚舍民宿"
+            ],
+            "query": "邕城晚舍民宿 广西",
+            "geo": {
+              "lat": 22.8129,
+              "lng": 108.3512
+            },
+            "days": [
+              1,
+              2
+            ]
+          },
+          {
+            "id": "p5",
+            "x": 1041.4,
+            "y": 713.54,
+            "color": "#e77e22",
+            "tx": 1119.4,
+            "ty": 651.54,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "青秀山"
+            ],
+            "query": "青秀山 广西",
+            "geo": {
+              "lat": 22.7862,
+              "lng": 108.3839
+            },
+            "days": [
+              2
+            ]
+          },
+          {
+            "id": "p6",
+            "x": 666.02,
+            "y": 811.2,
+            "color": "#618344",
+            "tx": 588.02,
+            "ty": 887.2,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "崇左"
+            ],
+            "query": "崇左 广西",
+            "geo": {
+              "lat": 22.415,
+              "lng": 107.359
+            },
+            "days": [
+              3
+            ]
+          },
+          {
+            "id": "p7",
+            "x": 408.04,
+            "y": 248.8,
+            "color": "#397dc1",
+            "tx": 546.04,
+            "ty": 160.8,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "百色"
+            ],
+            "query": "百色 广西",
+            "geo": {
+              "lat": 23.9025,
+              "lng": 106.6183
+            },
+            "days": []
+          },
+          {
+            "id": "p8",
+            "x": 528.16,
+            "y": 723.07,
+            "color": "#397dc1",
+            "tx": 390.16,
+            "ty": 825.07,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "峒那屿湾"
+            ],
+            "query": "峒那屿湾 广西",
+            "geo": {
+              "lat": 22.7199,
+              "lng": 107.0462
+            },
+            "days": []
+          },
+          {
+            "id": "p9",
+            "x": 606.3,
+            "y": 664.86,
+            "color": "#397dc1",
+            "tx": 638.3,
+            "ty": 714.86,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "伏那秘境"
+            ],
+            "query": "伏那秘境 广西",
+            "geo": {
+              "lat": 22.7406,
+              "lng": 107.091
+            },
+            "days": []
+          },
+          {
+            "id": "p10",
+            "x": 448.48,
+            "y": 659.41,
+            "color": "#618344",
+            "tx": 416.48,
+            "ty": 627.41,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "德天跨国瀑布"
+            ],
+            "query": "德天跨国瀑布 广西",
+            "geo": {
+              "lat": 22.8507,
+              "lng": 106.7303
+            },
+            "days": [
+              3,
+              4
+            ]
+          },
+          {
+            "id": "p11",
+            "x": 413.98,
+            "y": 565.23,
+            "color": "#209aaa",
+            "tx": 491.98,
+            "ty": 503.23,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "通灵大峡谷"
+            ],
+            "query": "通灵大峡谷 广西",
+            "geo": {
+              "lat": 23.021,
+              "lng": 106.653
+            },
+            "days": [
+              4
+            ]
+          }
+        ],
+        "overviewPlaceIds": [
+          "p3",
+          "p4",
+          "p5",
+          "p6",
+          "p7",
+          "p8",
+          "p9",
+          "p10",
+          "p11"
+        ],
+        "dailyLayouts": {
+          "1": {
+            "places": [
+              "p3",
+              "p4"
+            ],
+            "labels": {
+              "p3": {
+                "x": 1090.99,
+                "y": 584.66,
+                "anchor": "start"
+              },
+              "p4": {
+                "x": 934.14,
+                "y": 619.78,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 1012.57,
+                "y": 634.22
+              }
+            ]
+          },
+          "2": {
+            "places": [
+              "p4",
+              "p5"
+            ],
+            "labels": {
+              "p4": {
+                "x": 934.14,
+                "y": 619.78,
+                "anchor": "end"
+              },
+              "p5": {
+                "x": 1119.4,
+                "y": 651.54,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 1003.77,
+                "y": 682.66
+              }
+            ]
+          },
+          "3": {
+            "places": [
+              "p6",
+              "p10"
+            ],
+            "labels": {
+              "p6": {
+                "x": 588.02,
+                "y": 887.2,
+                "anchor": "end"
+              },
+              "p10": {
+                "x": 416.48,
+                "y": 627.41,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 557.25,
+                "y": 735.31
+              }
+            ]
+          },
+          "4": {
+            "places": [
+              "p10",
+              "p11"
+            ],
+            "labels": {
+              "p10": {
+                "x": 416.48,
+                "y": 627.41,
+                "anchor": "end"
+              },
+              "p11": {
+                "x": 491.98,
+                "y": 503.23,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 431.23,
+                "y": 612.32
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
